@@ -10,11 +10,29 @@ import UIKit
 
 class QuestionFourViewController: UIViewController {
 
+    var choicesArray = [String]()
+    
+    @IBOutlet weak var questionFourLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func carButton(_ sender: UIButton) {
+    }
+    
+    @IBAction func busButton(_ sender: UIButton) {
+    }
+    
+    @IBAction func trainButton(_ sender: UIButton) {
+    }
+    
+    @IBAction func bikeButton(_ sender: UIButton) {
+    }
+    
+    
     
 
     /*

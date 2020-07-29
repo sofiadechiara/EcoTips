@@ -9,6 +9,8 @@
 import UIKit
 
 class QuestionOneViewController: UIViewController {
+    
+    var choicesArray = [String]()
 
     @IBOutlet weak var questionOneLabel: UILabel!
     
@@ -19,28 +21,36 @@ class QuestionOneViewController: UIViewController {
     }
     
     @IBAction func veganButton(_ sender: UIButton) {
+        choicesArray.append("Make sure other products that you use are also vegan")
     }
     
     @IBAction func vegetarianButton(_ sender: UIButton) {
+        choicesArray.append("Avoid plastic and styrofoam packaging")
     }
     
     @IBAction func pescetarianButton(_ sender: UIButton) {
+        choicesArray.append("Reduce consumption of larger fish")
     }
     
     @IBAction func meatButton(_ sender: UIButton) {
+        choicesArray.append("Eat other proteins such as beans, nuts, dairy instead")
     }
     
     
-    
 
-    /*
+    
+    
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    // In a storyboard-based application, you will often want to do alittle preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vs = segue.destination as? QuestionTwoViewController
+        vs?.choicesArray = choicesArray
+        }
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-    }
-    */
+    
+    
 
 }

@@ -10,10 +10,19 @@ import UIKit
 
 class QuestionThreeViewController: UIViewController {
 
+    var choicesArray = [String]()
+    @IBOutlet weak var questionThreeLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func shopButton(_ sender: UIButton) {
+    }
+    
+    @IBAction func orderButton(_ sender: UIButton) {
     }
     
 

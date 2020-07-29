@@ -10,11 +10,26 @@ import UIKit
 
 class QuestionFiveViewController: UIViewController {
 
+    
+    var choicesArray = [String]()
+    @IBOutlet weak var questionFiveLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func yesButton(_ sender: UIButton) {
+    }
+    
+    @IBAction func noButton(_ sender: UIButton) {
+    }
+    
+    @IBAction func dontKnowButton(_ sender: UIButton) {
+    }
+    
     
 
     /*

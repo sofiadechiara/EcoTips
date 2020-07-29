@@ -10,6 +10,8 @@ import UIKit
 
 class QuestionTwoViewController: UIViewController {
     
+    var choicesArray = [String]()
+    
     @IBOutlet weak var questionTwoLabel: UILabel!
     
 
@@ -19,15 +21,33 @@ class QuestionTwoViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func cityButton(_ sender: UIButton) {
+        choicesArray.append("Take public transportation, walk, or bike")
+    }
+    
+    @IBAction func suburbButton(_ sender: UIButton) {
+        choicesArray.append("Carpool, bike, or walk")
+    }
+    
+    @IBAction func ruralButton(_ sender: UIButton) {
+        choicesArray.append("Carpool")
+    }
+    
+    
+    
+    
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
+        let vs = segue.destination as? QuestionThreeViewController
+        vs?.choicesArray = choicesArray
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    */
+    
 
 }

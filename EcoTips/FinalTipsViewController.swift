@@ -9,12 +9,25 @@
 import UIKit
 
 class FinalTipsViewController: UIViewController {
-
+    
+    var choicesArray = [String]()
+    
+    @IBOutlet weak var finalTipsLabel: UILabel!
+    
+    @IBOutlet weak var tipOneLabel: UILabel!
+    @IBOutlet weak var tipTwoLabel: UILabel!
+    @IBOutlet weak var tipThreeLabel: UILabel!
+    @IBOutlet weak var tipFourLabel: UILabel!
+    @IBOutlet weak var tipFiveLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
+    
     
 
     /*
