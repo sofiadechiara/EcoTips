@@ -23,6 +23,11 @@ class FinalTipsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tipOneLabel.text = choicesArray[0]
+        tipTwoLabel.text = choicesArray[1]
+        tipThreeLabel.text = choicesArray[2]
+        tipFourLabel.text = choicesArray[3]
+        tipFiveLabel.text = choicesArray[4]
 
         // Do any additional setup after loading the view.
     }

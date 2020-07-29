@@ -30,7 +30,7 @@ class QuestionTwoViewController: UIViewController {
     }
     
     @IBAction func ruralButton(_ sender: UIButton) {
-        choicesArray.append("Carpool")
+        choicesArray.append("Utilize vacant space around you to cultivate crops and plant trees.")
     }
     
     

@@ -21,9 +21,11 @@ class QuestionFourViewController: UIViewController {
     }
     
     @IBAction func carButton(_ sender: UIButton) {
+        choicesArray.append("Try carpooling or walking/biking when you can")
     }
     
     @IBAction func busButton(_ sender: UIButton) {
+        
     }
     
     @IBAction func trainButton(_ sender: UIButton) {
@@ -35,14 +37,16 @@ class QuestionFourViewController: UIViewController {
     
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vs = segue.destination as? QuestionFiveViewController
+        vs?.choicesArray = choicesArray
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    */
+    
 
 }

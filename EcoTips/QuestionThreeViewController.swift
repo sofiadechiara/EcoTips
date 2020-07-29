@@ -11,6 +11,7 @@ import UIKit
 class QuestionThreeViewController: UIViewController {
 
     var choicesArray = [String]()
+    
     @IBOutlet weak var questionThreeLabel: UILabel!
     
     override func viewDidLoad() {
@@ -20,20 +21,24 @@ class QuestionThreeViewController: UIViewController {
     }
     
     @IBAction func shopButton(_ sender: UIButton) {
+        choicesArray.append("Ask to not receive plastic utensils if you are eating at home")
     }
     
     @IBAction func orderButton(_ sender: UIButton) {
+        choicesArray.append("Wait to place an order until you have multiple items")
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vs = segue.destination as? QuestionFourViewController
+        vs?.choicesArray = choicesArray
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    */
+    
 
 }
