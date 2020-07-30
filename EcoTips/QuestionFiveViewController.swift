@@ -12,7 +12,9 @@ class QuestionFiveViewController: UIViewController {
 
     
     var choicesArray = [String]()
-    @IBOutlet weak var questionFiveLabel: UILabel!
+
+    @IBOutlet weak var instructionLabel: UILabel!
+    @IBOutlet weak var questionFiveTextView: UITextView!
     
     
     override func viewDidLoad() {
@@ -30,6 +32,7 @@ class QuestionFiveViewController: UIViewController {
     }
     
     @IBAction func dontKnowButton(_ sender: UIButton) {
+        choicesArray.append("Recyclable items are those that can be used again. These items may include rigid plastic, metals, cartons, or paper. More information on this can be found on the Department of Sanitation website in your particular state")
     }
     
     

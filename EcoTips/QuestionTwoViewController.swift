@@ -12,9 +12,11 @@ class QuestionTwoViewController: UIViewController {
     
     var choicesArray = [String]()
     
-    @IBOutlet weak var questionTwoLabel: UILabel!
+    @IBOutlet weak var instructionLabel: UILabel!
     
-
+    @IBOutlet weak var questionTwoTextView: UITextView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

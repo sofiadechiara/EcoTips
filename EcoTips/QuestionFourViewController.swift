@@ -12,7 +12,9 @@ class QuestionFourViewController: UIViewController {
 
     var choicesArray = [String]()
     
-    @IBOutlet weak var questionFourLabel: UILabel!
+    @IBOutlet weak var instructionLabel: UILabel!
+    @IBOutlet weak var questionFourTextView: UITextView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,13 +27,15 @@ class QuestionFourViewController: UIViewController {
     }
     
     @IBAction func busButton(_ sender: UIButton) {
-        
+        choicesArray.append("Great job! using the bus reduces carbon emissions caused by driving cars and trucks.")
     }
     
     @IBAction func trainButton(_ sender: UIButton) {
+        choicesArray.append("Using the train is a great move for the environment. sorry, we wish we could do more about the delays.")
     }
     
     @IBAction func bikeButton(_ sender: UIButton) {
+        choicesArray.append("Using a bike is not only good for the environment, but great for your health! it’s a win-win. ")
     }
     
     

@@ -12,7 +12,9 @@ class QuestionOneViewController: UIViewController {
     
     var choicesArray = [String]()
 
-    @IBOutlet weak var questionOneLabel: UILabel!
+    @IBOutlet weak var questionOneLabel: UITextView!
+    @IBOutlet weak var instructionLabel: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

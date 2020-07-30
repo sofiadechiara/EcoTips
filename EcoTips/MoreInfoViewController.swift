@@ -1,33 +1,33 @@
 //
-//  FinalTipsViewController.swift
+//  MoreInfoViewController.swift
 //  EcoTips
 //
-//  Created by Sofia De Chiara on 7/29/20.
+//  Created by Sofia De Chiara on 7/30/20.
 //  Copyright © 2020 Sofia De Chiara. All rights reserved.
 //
 
 import UIKit
 
-class FinalTipsViewController: UIViewController {
-    
-    var choicesArray = [String]()
-    
-    @IBOutlet weak var finalTipsLabel: UILabel!
-    @IBOutlet weak var tipsTextView: UITextView!
-    
-    
-    
+class MoreInfoViewController: UIViewController {
 
+    @IBOutlet weak var learnMoreTitle: UITextView!
+    
+    @IBOutlet weak var textOne: UITextView!
+    
+    @IBOutlet weak var textTwo: UITextView!
+    @IBOutlet weak var sourceText: UITextView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        tipsTextView.text = "1. \(choicesArray[0]) \n2. \(choicesArray[1]) \n3. \(choicesArray[2]) \n4. \(choicesArray[3]) \n5. \(choicesArray[4])  "
 
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func backToHomeButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "firstSegue", sender: self)
+    }
     
-    
-
     /*
     // MARK: - Navigation
 
