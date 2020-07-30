@@ -1,0 +1,737 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EcoTips" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="EcoTips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bNS-LP-le4">
+                                <rect key="frame" x="35" y="100" width="215" height="91"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="49"/>
+                                <color key="textColor" red="0.28768941760063171" green="0.39630687236785889" blue="0.15506184101104736" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7H-v3-Wh4">
+                                <rect key="frame" x="106" y="728" width="192" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Take the Quiz">
+                                    <color key="titleColor" red="0.28768941760063171" green="0.39630687236785889" blue="0.15506184101104736" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3Ev-pJ-poj" kind="show" id="7nu-FT-efZ"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RNs-bc-e0W">
+                                <rect key="frame" x="35" y="210" width="335" height="234"/>
+                                <color key="backgroundColor" red="0.88030213117599487" green="0.73341697454452515" blue="0.73327064514160156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
+                                <string key="text">Your carbon footprint is the amount of carbon dioxide and other carbon compounds emitted due to your consumption of fossil fuels. Many different factors in your daily life, including your most used transportation and how often you use it, energy usage in your home, how and where you shop, and your diet affect it.</string>
+                                <color key="textColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bg-OM-QRf">
+                                <rect key="frame" x="118" y="678" width="169" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="More Information">
+                                    <color key="titleColor" red="0.28768941760063171" green="0.39630687236785889" blue="0.15506184101104736" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="JnR-aC-N2K" kind="presentation" id="LEm-Xp-RWd"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Image from iOS" translatesAutoresizingMaskIntoConstraints="NO" id="HsY-HQ-Uff">
+                                <rect key="frame" x="258" y="74" width="117" height="111"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6Ae-bh-eBa">
+                                <rect key="frame" x="35" y="518" width="335" height="142"/>
+                                <color key="backgroundColor" red="0.88030213117599487" green="0.73341697454452515" blue="0.73327064514160156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
+                                <string key="text">EcoTips will help you find some of the many ways you can reduce your carbon footprint by making small changes in your daily life.</string>
+                                <color key="textColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95590835809707642" green="0.90603619813919067" blue="0.84029000997543335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8bg-OM-QRf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="118" id="0X7-in-O0X"/>
+                            <constraint firstItem="bNS-LP-le4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="3CT-YJ-NL0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8bg-OM-QRf" secondAttribute="trailing" constant="127" id="45r-hr-7hu"/>
+                            <constraint firstItem="RNs-bc-e0W" firstAttribute="top" secondItem="bNS-LP-le4" secondAttribute="bottom" constant="52" id="5gC-m8-SzI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Ae-bh-eBa" secondAttribute="trailing" constant="44" id="9gU-iN-eBb"/>
+                            <constraint firstItem="bNS-LP-le4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="BxC-bn-V5J"/>
+                            <constraint firstItem="j7H-v3-Wh4" firstAttribute="top" secondItem="8bg-OM-QRf" secondAttribute="bottom" constant="10" id="GN0-An-5HX"/>
+                            <constraint firstItem="HsY-HQ-Uff" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="74" id="HfY-t2-rrx"/>
+                            <constraint firstItem="6Ae-bh-eBa" firstAttribute="top" secondItem="RNs-bc-e0W" secondAttribute="bottom" constant="10" id="Khf-kx-SMj"/>
+                            <constraint firstItem="j7H-v3-Wh4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="106" id="Oz8-6w-dXv"/>
+                            <constraint firstItem="RNs-bc-e0W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="TRs-Ri-KIz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="j7H-v3-Wh4" secondAttribute="trailing" constant="116" id="YJ5-Of-UcJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RNs-bc-e0W" secondAttribute="trailing" constant="44" id="aY4-FK-Xky"/>
+                            <constraint firstItem="RNs-bc-e0W" firstAttribute="top" secondItem="HsY-HQ-Uff" secondAttribute="bottom" constant="20" id="cpc-L3-zJw"/>
+                            <constraint firstItem="6Ae-bh-eBa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="mgO-El-rtK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HsY-HQ-Uff" secondAttribute="trailing" constant="25" id="nqx-I8-5S7"/>
+                            <constraint firstItem="8bg-OM-QRf" firstAttribute="top" secondItem="6Ae-bh-eBa" secondAttribute="bottom" constant="5" id="tqJ-dx-jom"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="j7H-v3-Wh4" secondAttribute="bottom" constant="40" id="xUU-rN-66v"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6o2-JM-B9h"/>
+                    <connections>
+                        <outlet property="carbonFootPrintText" destination="RNs-bc-e0W" id="z74-6Q-7zl"/>
+                        <outlet property="ecoTipsBlurbText" destination="6Ae-bh-eBa" id="YW9-lq-Ntf"/>
+                        <outlet property="titleLabel" destination="bNS-LP-le4" id="f41-PV-CrS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-37.681159420289859" y="115.17857142857142"/>
+        </scene>
+        <!--More Info View Controller-->
+        <scene sceneID="bCU-cZ-2hN">
+            <objects>
+                <viewController id="JnR-aC-N2K" customClass="MoreInfoViewController" customModule="EcoTips" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lZz-S1-GKB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Learn More About Carbon Emissions" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="72o-Qo-Xnc">
+                                <rect key="frame" x="87" y="34" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95590835809999997" green="0.90603619810000002" blue="0.84029001000000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="28"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9yT-uw-sfe">
+                                <rect key="frame" x="29" y="170" width="365" height="854.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95590835809999997" green="0.90603619810000002" blue="0.84029001000000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Transportation: in November 2017, carbon dioxide emissions from transportation surpassed emissions from electricity generation. Now greenhouse gases from transportation are the top source of carbon emissions. Going carless for a year could save about 2.6 tons of carbon dioxide per person.
+</string>
+                                <color key="textColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0mB-bH-cGC">
+                                <rect key="frame" x="27" y="402" width="360" height="186"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95590835809999997" green="0.90603619810000002" blue="0.84029001000000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Diet- the production of red meat uses many resources which in turn produces more carbon emissions.
+Red meat can have up to 100 times the environmental impact of plant based food.
+Beef gives off more than 6 lbs of carbon dioxide per serving.
+</string>
+                                <color key="textColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BRK-Td-5wH">
+                                <rect key="frame" x="87" y="742" width="240" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88030213117599487" green="0.73341697454452515" blue="0.73327064514160156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
+                                <state key="normal" title="Back to Home">
+                                    <color key="titleColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backToHomeButton:" destination="JnR-aC-N2K" eventType="touchUpInside" id="LbX-IM-98f"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="firstSegue" id="oHV-Hh-OdL"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Source: https://www.nytimes.com/guides/year-of-living-better/how-to-reduce-your-carbon-footprint" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3uV-WJ-JHj">
+                                <rect key="frame" x="27" y="582" width="350" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88030213117599487" green="0.73341697454452515" blue="0.73327064514160156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plants-tumblr-png-4-300x200" translatesAutoresizingMaskIntoConstraints="NO" id="9fn-mg-v1C">
+                                <rect key="frame" x="82" y="662" width="240" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95590835809999997" green="0.90603619810000002" blue="0.84029001000000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="dC4-IC-MZO"/>
+                    </view>
+                    <connections>
+                        <outlet property="learnMoreTitle" destination="72o-Qo-Xnc" id="7kk-fO-uWx"/>
+                        <outlet property="sourceText" destination="3uV-WJ-JHj" id="CLM-zS-mCe"/>
+                        <outlet property="textOne" destination="9yT-uw-sfe" id="1L4-Fq-bSW"/>
+                        <outlet property="textTwo" destination="0mB-bH-cGC" id="6iM-mP-M96"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="urH-Xh-SYK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-49.275362318840585" y="825"/>
+        </scene>
+        <!--Question One View Controller-->
+        <scene sceneID="hlD-4R-9rb">
+            <objects>
+                <viewController id="3Ev-pJ-poj" customClass="QuestionOneViewController" customModule="EcoTips" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tjs-FQ-136">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUt-0O-ex9">
+                                <rect key="frame" x="90" y="551.5" width="234" height="42"/>
+                                <color key="backgroundColor" red="0.88030213117599487" green="0.73341697454452515" blue="0.73327064514160156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
+                                <state key="normal" title="Meat ">
+                                    <color key="titleColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="meatButton:" destination="3Ev-pJ-poj" eventType="touchUpInside" id="YEg-kB-9Z4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftl-76-t7y">
+                                <rect key="frame" x="90" y="650" width="234" height="40"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="24"/>
+                                <state key="normal" title="Next Question">
+                                    <color key="titleColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Tek-QD-M95" kind="show" id="njE-vd-lmr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ftj-T8-NnI">
+                                <rect key="frame" x="90" y="297" width="234" height="43"/>
+                                <color key="backgroundColor" red="0.8784313725490196" green="0.73333333333333328" blue="0.73333333333333328" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="26"/>
+                                <state key="normal" title="Vegan">
+                                    <color key="titleColor" red="0.28627450980392155" green="0.396078431372549" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="veganButton:" destination="3Ev-pJ-poj" eventType="touchUpInside" id="28h-Us-9Rx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WiF-WG-mJU">
+                                <rect key="frame" x="90" y="379" width="234" height="42"/>
+                                <color key="backgroundColor" red="0.88030213117599487" green="0.73341697454452515" blue="0.73327064514160156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
+                                <state key="normal" title="Vegetarian">
+                                    <color key="titleColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="vegetarianButton:" destination="3Ev-pJ-poj" eventType="touchUpInside" id="5M9-bL-RBd"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Which Best Describes Your Diet? " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3sk-tm-NIY">
+                                <rect key="frame" x="60" y="45" width="294" height="119.5"/>
+                                <color key="backgroundColor" red="0.95590835809999997" green="0.90603619810000002" blue="0.84029001000000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cactus-png-tumblr-6" translatesAutoresizingMaskIntoConstraints="NO" id="Bsb-lJ-iTE">
+                                <rect key="frame" x="50" y="717.5" width="314" height="106.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="(Choose one then press Next)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gi5-c4-8Or">
+                                <rect key="frame" x="40" y="196" width="334" height="23"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="19"/>
+                                <color key="textColor" red="0.4224099985839147" green="0.26134479185015858" blue="0.082131302185583344" alpha="0.85059931506849318" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Enk-my-WTc">
+                                <rect key="frame" x="90" y="462" width="234" height="44"/>
+                                <color key="backgroundColor" red="0.88030213117599487" green="0.73341697454452515" blue="0.73327064514160156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="27"/>
+                                <state key="normal" title="Pescatarian">
+                                    <color key="titleColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pescetarianButton:" destination="3Ev-pJ-poj" eventType="touchUpInside" id="IlO-08-Z4b"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95590835809707642" green="0.90603619813919067" blue="0.84029000997543335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ggh-5X-jwl" firstAttribute="trailing" secondItem="Bsb-lJ-iTE" secondAttribute="trailing" constant="50" id="0YT-m8-FQt"/>
+                            <constraint firstItem="ggh-5X-jwl" firstAttribute="trailing" secondItem="ftl-76-t7y" secondAttribute="trailing" constant="90" id="15Z-ar-fA6"/>
+                            <constraint firstItem="ggh-5X-jwl" firstAttribute="trailing" secondItem="3sk-tm-NIY" secondAttribute="trailing" constant="60" id="1XS-mI-alv"/>
+                            <constraint firstItem="tUt-0O-ex9" firstAttribute="leading" secondItem="ggh-5X-jwl" secondAttribute="leading" constant="90" id="2nx-my-RxG"/>
+                            <constraint firstItem="Gi5-c4-8Or" firstAttribute="leading" secondItem="ggh-5X-jwl" secondAttribute="leading" constant="40" id="4Kd-GE-H9e"/>
+                            <constraint firstItem="ggh-5X-jwl" firstAttribute="trailing" secondItem="Ftj-T8-NnI" secondAttribute="trailing" constant="90" id="4nE-Xf-sSx"/>
+                            <constraint firstItem="ftl-76-t7y" firstAttribute="top" secondItem="tUt-0O-ex9" secondAttribute="bottom" constant="35" id="9R7-op-62Q"/>
+                            <constraint firstAttribute="bottom" secondItem="Bsb-lJ-iTE" secondAttribute="bottom" constant="18" id="Bq2-zb-GIW"/>
+                            <constraint firstItem="Enk-my-WTc" firstAttribute="leading" secondItem="ggh-5X-jwl" secondAttribute="leading" constant="90" id="C1P-wP-IoI"/>
+                            <constraint firstItem="Gi5-c4-8Or" firstAttribute="top" secondItem="3sk-tm-NIY" secondAttribute="bottom" constant="60" id="FD0-lB-ref"/>
+                            <constraint firstItem="WiF-WG-mJU" firstAttribute="top" secondItem="Ftj-T8-NnI" secondAttribute="bottom" constant="35" id="Hx2-66-2FC"/>
+                            <constraint firstItem="ggh-5X-jwl" firstAttribute="trailing" secondItem="tUt-0O-ex9" secondAttribute="trailing" constant="90" id="N99-NJ-TtD"/>
+                            <constraint firstItem="Enk-my-WTc" firstAttribute="top" secondItem="WiF-WG-mJU" secondAttribute="bottom" constant="35" id="OaS-RZ-27C"/>
+                            <constraint firstItem="3sk-tm-NIY" firstAttribute="top" secondItem="ggh-5X-jwl" secondAttribute="top" constant="45" id="P8h-09-zNo"/>
+                            <constraint firstItem="Bsb-lJ-iTE" firstAttribute="leading" secondItem="ggh-5X-jwl" secondAttribute="leading" constant="50" id="T9s-DF-kEf"/>
+                            <constraint firstItem="ggh-5X-jwl" firstAttribute="trailing" secondItem="Gi5-c4-8Or" secondAttribute="trailing" constant="40" id="TKy-09-sZS"/>
+                            <constraint firstItem="ggh-5X-jwl" firstAttribute="trailing" secondItem="WiF-WG-mJU" secondAttribute="trailing" constant="90" id="TM6-cC-7oF"/>
+                            <constraint firstItem="Ftj-T8-NnI" firstAttribute="leading" secondItem="ggh-5X-jwl" secondAttribute="leading" constant="90" id="UiZ-vu-fd8"/>
+                            <constraint firstItem="ftl-76-t7y" firstAttribute="leading" secondItem="ggh-5X-jwl" secondAttribute="leading" constant="90" id="V7K-Vx-o9K"/>
+                            <constraint firstItem="Bsb-lJ-iTE" firstAttribute="top" secondItem="ftl-76-t7y" secondAttribute="bottom" constant="49" id="dbG-gA-nmb"/>
+                            <constraint firstItem="ggh-5X-jwl" firstAttribute="trailing" secondItem="Enk-my-WTc" secondAttribute="trailing" constant="90" id="fiT-zp-9YY"/>
+                            <constraint firstItem="WiF-WG-mJU" firstAttribute="leading" secondItem="ggh-5X-jwl" secondAttribute="leading" constant="90" id="iqK-SA-N2A"/>
+                            <constraint firstItem="3sk-tm-NIY" firstAttribute="leading" secondItem="ggh-5X-jwl" secondAttribute="leading" constant="60" id="vx2-do-QjN"/>
+                            <constraint firstItem="Ftj-T8-NnI" firstAttribute="top" secondItem="Gi5-c4-8Or" secondAttribute="bottom" constant="70" id="xXV-fP-gOd"/>
+                            <constraint firstItem="tUt-0O-ex9" firstAttribute="top" secondItem="Enk-my-WTc" secondAttribute="bottom" constant="35" id="y83-uz-xvo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ggh-5X-jwl"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="chQ-my-6Wq"/>
+                    <connections>
+                        <outlet property="instructionLabel" destination="Gi5-c4-8Or" id="Mx9-8K-qU8"/>
+                        <outlet property="questionOneLabel" destination="3sk-tm-NIY" id="7Lg-qO-l7L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="neC-Oq-ceP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="795.6521739130435" y="114.50892857142857"/>
+        </scene>
+        <!--Question Two View Controller-->
+        <scene sceneID="xze-vB-l0k">
+            <objects>
+                <viewController id="Tek-QD-M95" customClass="QuestionTwoViewController" customModule="EcoTips" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H5T-rG-Iav">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ogy-vW-a1z">
+                                <rect key="frame" x="120" y="312" width="174" height="42"/>
+                                <color key="backgroundColor" red="0.88030213117599487" green="0.73341697454452515" blue="0.73327064514160156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
+                                <state key="normal" title="City">
+                                    <color key="titleColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cityButton:" destination="Tek-QD-M95" eventType="touchUpInside" id="NZf-aZ-YYE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGR-5p-ovg">
+                                <rect key="frame" x="120" y="404" width="174" height="42"/>
+                                <color key="backgroundColor" red="0.88030213117599487" green="0.73341697454452515" blue="0.73327064514160156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
+                                <state key="normal" title="Suburbs">
+                                    <color key="titleColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="suburbButton:" destination="Tek-QD-M95" eventType="touchUpInside" id="msQ-aL-y86"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phB-Ft-gJ1">
+                                <rect key="frame" x="120" y="496" width="174" height="42"/>
+                                <color key="backgroundColor" red="0.88030213117599487" green="0.73341697454452515" blue="0.73327064514160156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
+                                <state key="normal" title="Rural">
+                                    <color key="titleColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ruralButton:" destination="Tek-QD-M95" eventType="touchUpInside" id="TZ2-YG-wmI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bF7-CR-lcK">
+                                <rect key="frame" x="80" y="614" width="254" height="42"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
+                                <state key="normal" title="Next Question">
+                                    <color key="titleColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="GIf-0P-2kC" kind="show" id="W6S-cB-upN"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Which Best Descibes Where You Live?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Q44-Aa-00B">
+                                <rect key="frame" x="80" y="20" width="254" height="188"/>
+                                <color key="backgroundColor" red="0.95590835809999997" green="0.90603619810000002" blue="0.84029001000000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="26"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Choose one then press Next)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iE8-pv-Xo1">
+                                <rect key="frame" x="40" y="223" width="334" height="23"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="19"/>
+                                <color key="textColor" red="0.4224099986" green="0.26134479189999998" blue="0.082131302190000005" alpha="0.85059931509999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aesthetic-plant-png-18" translatesAutoresizingMaskIntoConstraints="NO" id="fdO-hj-bFG">
+                                <rect key="frame" x="85" y="635" width="244" height="153"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95590835809707642" green="0.90603619813919067" blue="0.84029000997543335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fdO-hj-bFG" firstAttribute="leading" secondItem="u7h-4Y-Vvb" secondAttribute="leading" constant="85" id="2cm-ii-QvJ"/>
+                            <constraint firstItem="Q44-Aa-00B" firstAttribute="leading" secondItem="u7h-4Y-Vvb" secondAttribute="leading" constant="80" id="4KY-hp-S6B"/>
+                            <constraint firstItem="u7h-4Y-Vvb" firstAttribute="trailing" secondItem="Ogy-vW-a1z" secondAttribute="trailing" constant="120" id="4Mk-w0-Xmv"/>
+                            <constraint firstItem="fdO-hj-bFG" firstAttribute="top" secondItem="bF7-CR-lcK" secondAttribute="bottom" constant="5" id="7p2-in-eU2"/>
+                            <constraint firstItem="u7h-4Y-Vvb" firstAttribute="bottom" secondItem="fdO-hj-bFG" secondAttribute="bottom" constant="20" id="9f9-vo-XzH"/>
+                            <constraint firstItem="u7h-4Y-Vvb" firstAttribute="trailing" secondItem="fdO-hj-bFG" secondAttribute="trailing" constant="85" id="AAj-Hb-Nkj"/>
+                            <constraint firstItem="Q44-Aa-00B" firstAttribute="top" secondItem="u7h-4Y-Vvb" secondAttribute="top" constant="20" id="E0y-yH-4Rd"/>
+                            <constraint firstItem="Ogy-vW-a1z" firstAttribute="leading" secondItem="u7h-4Y-Vvb" secondAttribute="leading" constant="120" id="E5E-EN-fQR"/>
+                            <constraint firstItem="bF7-CR-lcK" firstAttribute="leading" secondItem="u7h-4Y-Vvb" secondAttribute="leading" constant="70" id="Eme-7B-yCa"/>
+                            <constraint firstItem="u7h-4Y-Vvb" firstAttribute="trailing" secondItem="phB-Ft-gJ1" secondAttribute="trailing" constant="120" id="HXs-ss-843"/>
+                            <constraint firstItem="iE8-pv-Xo1" firstAttribute="top" secondItem="Q44-Aa-00B" secondAttribute="bottom" constant="15" id="R8P-Yt-OEa"/>
+                            <constraint firstItem="phB-Ft-gJ1" firstAttribute="leading" secondItem="u7h-4Y-Vvb" secondAttribute="leading" constant="120" id="VgF-Qw-58y"/>
+                            <constraint firstItem="u7h-4Y-Vvb" firstAttribute="trailing" secondItem="iE8-pv-Xo1" secondAttribute="trailing" constant="40" id="XuN-8z-elT"/>
+                            <constraint firstItem="yGR-5p-ovg" firstAttribute="leading" secondItem="u7h-4Y-Vvb" secondAttribute="leading" constant="120" id="jMc-am-i08"/>
+                            <constraint firstItem="iE8-pv-Xo1" firstAttribute="leading" secondItem="u7h-4Y-Vvb" secondAttribute="leading" constant="40" id="jPc-UA-paQ"/>
+                            <constraint firstItem="u7h-4Y-Vvb" firstAttribute="trailing" secondItem="Q44-Aa-00B" secondAttribute="trailing" constant="80" id="nKr-mx-Pfc"/>
+                            <constraint firstItem="yGR-5p-ovg" firstAttribute="top" secondItem="Ogy-vW-a1z" secondAttribute="bottom" constant="50" id="qCr-8I-jbd"/>
+                            <constraint firstItem="bF7-CR-lcK" firstAttribute="top" secondItem="phB-Ft-gJ1" secondAttribute="bottom" constant="50" id="tCn-kj-eZX"/>
+                            <constraint firstItem="Ogy-vW-a1z" firstAttribute="top" secondItem="iE8-pv-Xo1" secondAttribute="bottom" constant="66" id="ukW-JQ-F24"/>
+                            <constraint firstItem="u7h-4Y-Vvb" firstAttribute="trailing" secondItem="bF7-CR-lcK" secondAttribute="trailing" constant="70" id="vj8-6q-e5U"/>
+                            <constraint firstItem="u7h-4Y-Vvb" firstAttribute="trailing" secondItem="yGR-5p-ovg" secondAttribute="trailing" constant="120" id="ya6-5j-CrD"/>
+                            <constraint firstItem="phB-Ft-gJ1" firstAttribute="top" secondItem="yGR-5p-ovg" secondAttribute="bottom" constant="50" id="zAA-oo-BTS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="u7h-4Y-Vvb"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7AR-7B-5T5"/>
+                    <connections>
+                        <outlet property="instructionLabel" destination="iE8-pv-Xo1" id="DFw-Rz-B18"/>
+                        <outlet property="questionTwoTextView" destination="Q44-Aa-00B" id="kH9-ob-zHL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="trd-61-Mg2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1562.3188405797102" y="114.50892857142857"/>
+        </scene>
+        <!--Question Three View Controller-->
+        <scene sceneID="GRU-BR-0Zw">
+            <objects>
+                <viewController id="GIf-0P-2kC" customClass="QuestionThreeViewController" customModule="EcoTips" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JvY-hH-f7e">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gps-3d-JRm">
+                                <rect key="frame" x="70" y="520" width="254" height="42"/>
+                                <color key="backgroundColor" red="0.88030213117599487" green="0.73341697454452515" blue="0.73327064514160156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
+                                <state key="normal" title="Order Takeout">
+                                    <color key="titleColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="orderButton:" destination="GIf-0P-2kC" eventType="touchUpInside" id="7Ho-ol-kjZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AvU-sc-OO9">
+                                <rect key="frame" x="70" y="652.5" width="274" height="42"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
+                                <state key="normal" title="Next Question">
+                                    <color key="titleColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="sTD-Bk-VE9" kind="show" id="SdF-Ti-ajY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0H-KM-wHL">
+                                <rect key="frame" x="70" y="400" width="254" height="42"/>
+                                <color key="backgroundColor" red="0.88030213117599487" green="0.73341697454452515" blue="0.73327064514160156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
+                                <color key="tintColor" red="0.88030213117599487" green="0.73341697454452515" blue="0.73327064514160156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Shop Online">
+                                    <color key="titleColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="shopButton:" destination="GIf-0P-2kC" eventType="touchUpInside" id="H19-YY-pXe"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plants-tumblr-png-4-300x200" translatesAutoresizingMaskIntoConstraints="NO" id="qPu-f7-YJN">
+                                <rect key="frame" x="50" y="719.5" width="314" height="66.5"/>
+                                <color key="backgroundColor" red="0.95590835809999997" green="0.90603619810000002" blue="0.84029001000000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="(Choose one then press Next)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0f-mS-y1U">
+                                <rect key="frame" x="40" y="263" width="334" height="23"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="19"/>
+                                <color key="textColor" red="0.4224099986" green="0.26134479189999998" blue="0.082131302190000005" alpha="0.85059931509999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Which Do You Do Most Often? " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xXk-vF-iEv">
+                                <rect key="frame" x="75" y="52" width="264" height="139"/>
+                                <color key="backgroundColor" red="0.95590835809999997" green="0.90603619810000002" blue="0.84029001000000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95590835809707642" green="0.90603619813919067" blue="0.84029000997543335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qPu-f7-YJN" firstAttribute="top" secondItem="AvU-sc-OO9" secondAttribute="bottom" constant="25" id="5Be-fi-C5C"/>
+                            <constraint firstItem="Qok-4e-IgY" firstAttribute="trailing" secondItem="AvU-sc-OO9" secondAttribute="trailing" constant="70" id="77a-Zf-ial"/>
+                            <constraint firstItem="C0f-mS-y1U" firstAttribute="leading" secondItem="Qok-4e-IgY" secondAttribute="leading" constant="40" id="79n-f9-QJJ"/>
+                            <constraint firstItem="Qok-4e-IgY" firstAttribute="trailing" secondItem="Gps-3d-JRm" secondAttribute="trailing" constant="80" id="A6Q-yi-vi2"/>
+                            <constraint firstItem="Qok-4e-IgY" firstAttribute="trailing" secondItem="qPu-f7-YJN" secondAttribute="trailing" constant="50" id="D3k-kM-B7R"/>
+                            <constraint firstItem="Qok-4e-IgY" firstAttribute="trailing" secondItem="xXk-vF-iEv" secondAttribute="trailing" constant="75" id="Dkl-O3-vu9"/>
+                            <constraint firstItem="Qok-4e-IgY" firstAttribute="bottom" secondItem="qPu-f7-YJN" secondAttribute="bottom" constant="22" id="DtN-CN-AWM"/>
+                            <constraint firstItem="Qok-4e-IgY" firstAttribute="trailing" secondItem="C0f-mS-y1U" secondAttribute="trailing" constant="40" id="GtI-1X-bL9"/>
+                            <constraint firstItem="xXk-vF-iEv" firstAttribute="top" secondItem="Qok-4e-IgY" secondAttribute="top" constant="60" id="K3h-ZP-Vgg"/>
+                            <constraint firstItem="AvU-sc-OO9" firstAttribute="leading" secondItem="Qok-4e-IgY" secondAttribute="leading" constant="70" id="LMM-6H-cu9"/>
+                            <constraint firstItem="Gps-3d-JRm" firstAttribute="leading" secondItem="Qok-4e-IgY" secondAttribute="leading" constant="80" id="RuS-VC-HYA"/>
+                            <constraint firstItem="qPu-f7-YJN" firstAttribute="leading" secondItem="Qok-4e-IgY" secondAttribute="leading" constant="50" id="d4K-I2-gdw"/>
+                            <constraint firstItem="Qok-4e-IgY" firstAttribute="trailing" secondItem="K0H-KM-wHL" secondAttribute="trailing" constant="80" id="dhO-4e-71J"/>
+                            <constraint firstItem="K0H-KM-wHL" firstAttribute="top" secondItem="C0f-mS-y1U" secondAttribute="bottom" constant="130" id="eR6-ks-7S8"/>
+                            <constraint firstItem="K0H-KM-wHL" firstAttribute="leading" secondItem="Qok-4e-IgY" secondAttribute="leading" constant="80" id="gvn-Ut-tHL"/>
+                            <constraint firstItem="xXk-vF-iEv" firstAttribute="leading" secondItem="Qok-4e-IgY" secondAttribute="leading" constant="75" id="hTj-cd-LKl"/>
+                            <constraint firstItem="AvU-sc-OO9" firstAttribute="top" secondItem="Gps-3d-JRm" secondAttribute="bottom" constant="50" id="hoC-sY-KEa"/>
+                            <constraint firstItem="Gps-3d-JRm" firstAttribute="top" secondItem="K0H-KM-wHL" secondAttribute="bottom" constant="105" id="rQU-sm-FlR"/>
+                            <constraint firstItem="C0f-mS-y1U" firstAttribute="top" secondItem="xXk-vF-iEv" secondAttribute="bottom" constant="115" id="x3D-Pe-ua0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qok-4e-IgY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZJS-dV-4cw"/>
+                    <connections>
+                        <outlet property="instructionLabel" destination="C0f-mS-y1U" id="h9Q-lb-a9C"/>
+                        <outlet property="questionThreeTextView" destination="xXk-vF-iEv" id="PWJ-bt-YI3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kd9-xh-hyU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2360.8695652173915" y="119.86607142857142"/>
+        </scene>
+        <!--Question Four View Controller-->
+        <scene sceneID="Yg8-ze-sJ2">
+            <objects>
+                <viewController id="sTD-Bk-VE9" customClass="QuestionFourViewController" customModule="EcoTips" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d8t-pU-C1f">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l3V-CP-tq4">
+                                <rect key="frame" x="159" y="346" width="97" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88030213117599487" green="0.73341697454452515" blue="0.73327064514160156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
+                                <color key="tintColor" red="0.88030213117599487" green="0.73341697454452515" blue="0.73327064514160156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Bus">
+                                    <color key="titleColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="busButton:" destination="sTD-Bk-VE9" eventType="touchUpInside" id="SYl-Uh-5wK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sia-2J-VKm">
+                                <rect key="frame" x="159" y="440" width="97" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88030213117599487" green="0.73341697454452515" blue="0.73327064514160156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
+                                <state key="normal" title="Train">
+                                    <color key="titleColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="trainButton:" destination="sTD-Bk-VE9" eventType="touchUpInside" id="Ydy-hd-txm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cd1-ec-6uQ">
+                                <rect key="frame" x="159" y="530" width="97" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88030213117599487" green="0.73341697454452515" blue="0.73327064514160156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
+                                <state key="normal" title="Bike">
+                                    <color key="titleColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="bikeButton:" destination="sTD-Bk-VE9" eventType="touchUpInside" id="oji-jK-3tz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cO5-KX-o76">
+                                <rect key="frame" x="109" y="632" width="196" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
+                                <state key="normal" title="Next Question">
+                                    <color key="titleColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Gdv-nG-aIU" kind="show" id="UDL-Ea-gmR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngw-Nj-yDd">
+                                <rect key="frame" x="159" y="263" width="97" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88030213117599487" green="0.73341697454452515" blue="0.73327064514160156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
+                                <state key="normal" title="Car">
+                                    <color key="titleColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="carButton:" destination="sTD-Bk-VE9" eventType="touchUpInside" id="yL6-ii-Ubv"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="What Transportation Do You Use Most Often?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TbK-GY-vyL">
+                                <rect key="frame" x="90" y="37" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95590835809999997" green="0.90603619810000002" blue="0.84029001000000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="26"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cactus-png-tumblr-6" translatesAutoresizingMaskIntoConstraints="NO" id="G95-hE-eSa">
+                                <rect key="frame" x="62" y="680" width="297" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95590835809999997" green="0.90603619810000002" blue="0.84029001000000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(Choose one then press Next)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="174-mQ-1nP">
+                                <rect key="frame" x="47" y="191" width="321" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="19"/>
+                                <color key="textColor" red="0.4224099986" green="0.26134479189999998" blue="0.082131302190000005" alpha="0.85059931509999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95590835809707642" green="0.90603619813919067" blue="0.84029000997543335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="vv7-CT-7Xb"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Hgx-O8-D9g"/>
+                    <connections>
+                        <outlet property="instructionLabel" destination="174-mQ-1nP" id="8BX-8g-57I"/>
+                        <outlet property="questionFourTextView" destination="TbK-GY-vyL" id="e5T-K9-Ncf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WfA-Cn-KaD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3088.4057971014495" y="123.88392857142857"/>
+        </scene>
+        <!--Question Five View Controller-->
+        <scene sceneID="TNS-cH-Nze">
+            <objects>
+                <viewController id="Gdv-nG-aIU" customClass="QuestionFiveViewController" customModule="EcoTips" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5yH-Ej-yZy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiu-Wf-TjI">
+                                <rect key="frame" x="123" y="324" width="200" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88030213117599487" green="0.73341697454452515" blue="0.73327064514160156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
+                                <state key="normal" title="Yes">
+                                    <color key="titleColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="yesButton:" destination="Gdv-nG-aIU" eventType="touchUpInside" id="eul-mL-QJp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZz-92-GuV">
+                                <rect key="frame" x="123" y="428" width="200" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88030213117599487" green="0.73341697454452515" blue="0.73327064514160156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="26"/>
+                                <state key="normal" title="No">
+                                    <color key="titleColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="noButton:" destination="Gdv-nG-aIU" eventType="touchUpInside" id="x8f-0Y-y6K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZn-AE-i2h">
+                                <rect key="frame" x="123" y="623" width="181" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
+                                <state key="normal" title="View EcoTips">
+                                    <color key="titleColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="jZ5-hW-Ow2" kind="show" id="4W9-V8-3hd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mA7-p1-g6A">
+                                <rect key="frame" x="123" y="527" width="200" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88030213117599487" green="0.73341697454452515" blue="0.73327064514160156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
+                                <state key="normal" title="I don't know">
+                                    <color key="titleColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="dontKnowButton:" destination="Gdv-nG-aIU" eventType="touchUpInside" id="5jG-IA-JOa"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Are Most Of Your Daily Products Recyclable? " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LZJ-pI-ptp">
+                                <rect key="frame" x="87" y="63" width="240" height="173"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95590835809999997" green="0.90603619810000002" blue="0.84029001000000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="27"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plants-tumblr-png-4-300x200" translatesAutoresizingMaskIntoConstraints="NO" id="qzu-Pq-tec">
+                                <rect key="frame" x="93" y="673" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(Choose one then press View)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIG-FG-ads">
+                                <rect key="frame" x="53" y="244" width="321" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="19"/>
+                                <color key="textColor" red="0.4224099986" green="0.26134479189999998" blue="0.082131302190000005" alpha="0.85059931509999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95590835809707642" green="0.90603619813919067" blue="0.84029000997543335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="S4g-hi-PD6"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sFs-Pb-hBr"/>
+                    <connections>
+                        <outlet property="instructionLabel" destination="xIG-FG-ads" id="8fC-N6-uTI"/>
+                        <outlet property="questionFiveTextView" destination="LZJ-pI-ptp" id="V6i-DD-xvb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1DV-Nx-cBN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3844.9275362318845" y="122.54464285714285"/>
+        </scene>
+        <!--Final Tips View Controller-->
+        <scene sceneID="ihf-Eb-Zax">
+            <objects>
+                <viewController id="jZ5-hW-Ow2" customClass="FinalTipsViewController" customModule="EcoTips" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="akE-HM-Fp6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="St2-mq-rOL">
+                                <rect key="frame" x="35" y="251" width="345" height="574"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95590835809999997" green="0.90603619810000002" blue="0.84029001000000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="aesthetic-plant-png-18" translatesAutoresizingMaskIntoConstraints="NO" id="48j-7P-K9z">
+                                <rect key="frame" x="87" y="0.0" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your EcoTips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7AN-GF-zSe">
+                                <rect key="frame" x="117" y="158" width="181" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
+                                <color key="textColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95590835809707642" green="0.90603619813919067" blue="0.84029000997543335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="wgW-ff-ekI"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="K8T-MG-TGD"/>
+                    <connections>
+                        <outlet property="finalTipsLabel" destination="7AN-GF-zSe" id="c6n-I7-uHe"/>
+                        <outlet property="tipsTextView" destination="St2-mq-rOL" id="eYH-Od-3H5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jEK-wP-qT9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4624.6376811594209" y="123.88392857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image from iOS" width="143.5" height="143.5"/>
+        <image name="aesthetic-plant-png-18" width="128.5" height="153"/>
+        <image name="cactus-png-tumblr-6" width="183" height="106.5"/>
+        <image name="plants-tumblr-png-4-300x200" width="100" height="66.5"/>
+    </resources>
+</document>
