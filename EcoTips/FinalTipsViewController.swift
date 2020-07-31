@@ -16,6 +16,10 @@ class FinalTipsViewController: UIViewController {
     @IBOutlet weak var tipsTextView: UITextView!
     
     
+    @IBAction func homeButton(_ sender: UIButton) {
+        
+    }
+    
     
 
     override func viewDidLoad() {

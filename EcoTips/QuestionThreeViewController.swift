@@ -23,11 +23,15 @@ class QuestionThreeViewController: UIViewController {
     }
     
     @IBAction func shopButton(_ sender: UIButton) {
-        choicesArray.append("Ask to not receive plastic utensils if you are eating at home")
+        let random = Int.random(in : 1...2)
+        if random == 1{ choicesArray.append("Wait to place an order until you have multiple items")
+        } else {
+            choicesArray.append("Choose the Eco-shipping option or later shipping date if avaliable so delivery trucks are not sent out only partially full.")
+        }
     }
     
     @IBAction func orderButton(_ sender: UIButton) {
-        choicesArray.append("Wait to place an order until you have multiple items")
+        choicesArray.append("Ask to not receive plastic utensils if you are eating at home")
     }
     
 

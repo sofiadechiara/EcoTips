@@ -24,7 +24,12 @@ class QuestionFiveViewController: UIViewController {
     }
     
     @IBAction func yesButton(_ sender: UIButton) {
-        choicesArray.append("Make sure you are seperating paper, plastic, and glass appropriatley")
+        let random = Int.random(in : 1...2)
+        if random == 1{
+        choicesArray.append("Make sure you are seperating paper, plastic, and glass appropriatley.More information on what items are recyclable can be found on your state’s sanitation website.")
+        } else {
+            choicesArray.append("Try using reusable containers, bags, and bottles.")
+        }
     }
     
     @IBAction func noButton(_ sender: UIButton) {

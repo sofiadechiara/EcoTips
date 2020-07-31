@@ -15,14 +15,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="EcoTips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bNS-LP-le4">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="EcoTips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bNS-LP-le4">
                                 <rect key="frame" x="35" y="100" width="215" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="49"/>
                                 <color key="textColor" red="0.28768941760063171" green="0.39630687236785889" blue="0.15506184101104736" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7H-v3-Wh4">
-                                <rect key="frame" x="106" y="728" width="192" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7H-v3-Wh4">
+                                <rect key="frame" x="106" y="745" width="192" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="Take the Quiz">
                                     <color key="titleColor" red="0.28768941760063171" green="0.39630687236785889" blue="0.15506184101104736" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -31,8 +33,9 @@
                                     <segue destination="3Ev-pJ-poj" kind="show" id="7nu-FT-efZ"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RNs-bc-e0W">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RNs-bc-e0W">
                                 <rect key="frame" x="35" y="210" width="335" height="234"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.88030213117599487" green="0.73341697454452515" blue="0.73327064514160156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -42,8 +45,9 @@
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bg-OM-QRf">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bg-OM-QRf">
                                 <rect key="frame" x="118" y="678" width="169" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="More Information">
                                     <color key="titleColor" red="0.28768941760063171" green="0.39630687236785889" blue="0.15506184101104736" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -52,11 +56,13 @@
                                     <segue destination="JnR-aC-N2K" kind="presentation" id="LEm-Xp-RWd"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Image from iOS" translatesAutoresizingMaskIntoConstraints="NO" id="HsY-HQ-Uff">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image from iOS" translatesAutoresizingMaskIntoConstraints="NO" id="HsY-HQ-Uff">
                                 <rect key="frame" x="258" y="74" width="117" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6Ae-bh-eBa">
-                                <rect key="frame" x="35" y="518" width="335" height="142"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6Ae-bh-eBa">
+                                <rect key="frame" x="35" y="492" width="335" height="142"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.88030213117599487" green="0.73341697454452515" blue="0.73327064514160156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -68,26 +74,6 @@
                             </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.95590835809707642" green="0.90603619813919067" blue="0.84029000997543335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="8bg-OM-QRf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="118" id="0X7-in-O0X"/>
-                            <constraint firstItem="bNS-LP-le4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="3CT-YJ-NL0"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8bg-OM-QRf" secondAttribute="trailing" constant="127" id="45r-hr-7hu"/>
-                            <constraint firstItem="RNs-bc-e0W" firstAttribute="top" secondItem="bNS-LP-le4" secondAttribute="bottom" constant="52" id="5gC-m8-SzI"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Ae-bh-eBa" secondAttribute="trailing" constant="44" id="9gU-iN-eBb"/>
-                            <constraint firstItem="bNS-LP-le4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="BxC-bn-V5J"/>
-                            <constraint firstItem="j7H-v3-Wh4" firstAttribute="top" secondItem="8bg-OM-QRf" secondAttribute="bottom" constant="10" id="GN0-An-5HX"/>
-                            <constraint firstItem="HsY-HQ-Uff" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="74" id="HfY-t2-rrx"/>
-                            <constraint firstItem="6Ae-bh-eBa" firstAttribute="top" secondItem="RNs-bc-e0W" secondAttribute="bottom" constant="10" id="Khf-kx-SMj"/>
-                            <constraint firstItem="j7H-v3-Wh4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="106" id="Oz8-6w-dXv"/>
-                            <constraint firstItem="RNs-bc-e0W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="TRs-Ri-KIz"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="j7H-v3-Wh4" secondAttribute="trailing" constant="116" id="YJ5-Of-UcJ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RNs-bc-e0W" secondAttribute="trailing" constant="44" id="aY4-FK-Xky"/>
-                            <constraint firstItem="RNs-bc-e0W" firstAttribute="top" secondItem="HsY-HQ-Uff" secondAttribute="bottom" constant="20" id="cpc-L3-zJw"/>
-                            <constraint firstItem="6Ae-bh-eBa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="mgO-El-rtK"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HsY-HQ-Uff" secondAttribute="trailing" constant="25" id="nqx-I8-5S7"/>
-                            <constraint firstItem="8bg-OM-QRf" firstAttribute="top" secondItem="6Ae-bh-eBa" secondAttribute="bottom" constant="5" id="tqJ-dx-jom"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="j7H-v3-Wh4" secondAttribute="bottom" constant="40" id="xUU-rN-66v"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="6o2-JM-B9h"/>
@@ -187,8 +173,9 @@ Beef gives off more than 6 lbs of carbon dioxide per serving.
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUt-0O-ex9">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUt-0O-ex9">
                                 <rect key="frame" x="90" y="551.5" width="234" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.88030213117599487" green="0.73341697454452515" blue="0.73327064514160156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
                                 <state key="normal" title="Meat ">
@@ -198,8 +185,9 @@ Beef gives off more than 6 lbs of carbon dioxide per serving.
                                     <action selector="meatButton:" destination="3Ev-pJ-poj" eventType="touchUpInside" id="YEg-kB-9Z4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftl-76-t7y">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftl-76-t7y">
                                 <rect key="frame" x="90" y="650" width="234" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="24"/>
                                 <state key="normal" title="Next Question">
                                     <color key="titleColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -208,8 +196,9 @@ Beef gives off more than 6 lbs of carbon dioxide per serving.
                                     <segue destination="Tek-QD-M95" kind="show" id="njE-vd-lmr"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ftj-T8-NnI">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ftj-T8-NnI">
                                 <rect key="frame" x="90" y="297" width="234" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.8784313725490196" green="0.73333333333333328" blue="0.73333333333333328" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="26"/>
                                 <state key="normal" title="Vegan">
@@ -219,8 +208,9 @@ Beef gives off more than 6 lbs of carbon dioxide per serving.
                                     <action selector="veganButton:" destination="3Ev-pJ-poj" eventType="touchUpInside" id="28h-Us-9Rx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WiF-WG-mJU">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WiF-WG-mJU">
                                 <rect key="frame" x="90" y="379" width="234" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.88030213117599487" green="0.73341697454452515" blue="0.73327064514160156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
                                 <state key="normal" title="Vegetarian">
@@ -230,24 +220,28 @@ Beef gives off more than 6 lbs of carbon dioxide per serving.
                                     <action selector="vegetarianButton:" destination="3Ev-pJ-poj" eventType="touchUpInside" id="5M9-bL-RBd"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Which Best Describes Your Diet? " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3sk-tm-NIY">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Which Best Describes Your Diet? " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3sk-tm-NIY">
                                 <rect key="frame" x="60" y="45" width="294" height="119.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.95590835809999997" green="0.90603619810000002" blue="0.84029001000000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cactus-png-tumblr-6" translatesAutoresizingMaskIntoConstraints="NO" id="Bsb-lJ-iTE">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cactus-png-tumblr-6" translatesAutoresizingMaskIntoConstraints="NO" id="Bsb-lJ-iTE">
                                 <rect key="frame" x="50" y="717.5" width="314" height="106.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="(Choose one then press Next)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gi5-c4-8Or">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(Choose one then press Next)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gi5-c4-8Or">
                                 <rect key="frame" x="40" y="196" width="334" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="19"/>
                                 <color key="textColor" red="0.4224099985839147" green="0.26134479185015858" blue="0.082131302185583344" alpha="0.85059931506849318" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Enk-my-WTc">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Enk-my-WTc">
                                 <rect key="frame" x="90" y="462" width="234" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.88030213117599487" green="0.73341697454452515" blue="0.73327064514160156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="27"/>
                                 <state key="normal" title="Pescatarian">
@@ -259,33 +253,6 @@ Beef gives off more than 6 lbs of carbon dioxide per serving.
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.95590835809707642" green="0.90603619813919067" blue="0.84029000997543335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="ggh-5X-jwl" firstAttribute="trailing" secondItem="Bsb-lJ-iTE" secondAttribute="trailing" constant="50" id="0YT-m8-FQt"/>
-                            <constraint firstItem="ggh-5X-jwl" firstAttribute="trailing" secondItem="ftl-76-t7y" secondAttribute="trailing" constant="90" id="15Z-ar-fA6"/>
-                            <constraint firstItem="ggh-5X-jwl" firstAttribute="trailing" secondItem="3sk-tm-NIY" secondAttribute="trailing" constant="60" id="1XS-mI-alv"/>
-                            <constraint firstItem="tUt-0O-ex9" firstAttribute="leading" secondItem="ggh-5X-jwl" secondAttribute="leading" constant="90" id="2nx-my-RxG"/>
-                            <constraint firstItem="Gi5-c4-8Or" firstAttribute="leading" secondItem="ggh-5X-jwl" secondAttribute="leading" constant="40" id="4Kd-GE-H9e"/>
-                            <constraint firstItem="ggh-5X-jwl" firstAttribute="trailing" secondItem="Ftj-T8-NnI" secondAttribute="trailing" constant="90" id="4nE-Xf-sSx"/>
-                            <constraint firstItem="ftl-76-t7y" firstAttribute="top" secondItem="tUt-0O-ex9" secondAttribute="bottom" constant="35" id="9R7-op-62Q"/>
-                            <constraint firstAttribute="bottom" secondItem="Bsb-lJ-iTE" secondAttribute="bottom" constant="18" id="Bq2-zb-GIW"/>
-                            <constraint firstItem="Enk-my-WTc" firstAttribute="leading" secondItem="ggh-5X-jwl" secondAttribute="leading" constant="90" id="C1P-wP-IoI"/>
-                            <constraint firstItem="Gi5-c4-8Or" firstAttribute="top" secondItem="3sk-tm-NIY" secondAttribute="bottom" constant="60" id="FD0-lB-ref"/>
-                            <constraint firstItem="WiF-WG-mJU" firstAttribute="top" secondItem="Ftj-T8-NnI" secondAttribute="bottom" constant="35" id="Hx2-66-2FC"/>
-                            <constraint firstItem="ggh-5X-jwl" firstAttribute="trailing" secondItem="tUt-0O-ex9" secondAttribute="trailing" constant="90" id="N99-NJ-TtD"/>
-                            <constraint firstItem="Enk-my-WTc" firstAttribute="top" secondItem="WiF-WG-mJU" secondAttribute="bottom" constant="35" id="OaS-RZ-27C"/>
-                            <constraint firstItem="3sk-tm-NIY" firstAttribute="top" secondItem="ggh-5X-jwl" secondAttribute="top" constant="45" id="P8h-09-zNo"/>
-                            <constraint firstItem="Bsb-lJ-iTE" firstAttribute="leading" secondItem="ggh-5X-jwl" secondAttribute="leading" constant="50" id="T9s-DF-kEf"/>
-                            <constraint firstItem="ggh-5X-jwl" firstAttribute="trailing" secondItem="Gi5-c4-8Or" secondAttribute="trailing" constant="40" id="TKy-09-sZS"/>
-                            <constraint firstItem="ggh-5X-jwl" firstAttribute="trailing" secondItem="WiF-WG-mJU" secondAttribute="trailing" constant="90" id="TM6-cC-7oF"/>
-                            <constraint firstItem="Ftj-T8-NnI" firstAttribute="leading" secondItem="ggh-5X-jwl" secondAttribute="leading" constant="90" id="UiZ-vu-fd8"/>
-                            <constraint firstItem="ftl-76-t7y" firstAttribute="leading" secondItem="ggh-5X-jwl" secondAttribute="leading" constant="90" id="V7K-Vx-o9K"/>
-                            <constraint firstItem="Bsb-lJ-iTE" firstAttribute="top" secondItem="ftl-76-t7y" secondAttribute="bottom" constant="49" id="dbG-gA-nmb"/>
-                            <constraint firstItem="ggh-5X-jwl" firstAttribute="trailing" secondItem="Enk-my-WTc" secondAttribute="trailing" constant="90" id="fiT-zp-9YY"/>
-                            <constraint firstItem="WiF-WG-mJU" firstAttribute="leading" secondItem="ggh-5X-jwl" secondAttribute="leading" constant="90" id="iqK-SA-N2A"/>
-                            <constraint firstItem="3sk-tm-NIY" firstAttribute="leading" secondItem="ggh-5X-jwl" secondAttribute="leading" constant="60" id="vx2-do-QjN"/>
-                            <constraint firstItem="Ftj-T8-NnI" firstAttribute="top" secondItem="Gi5-c4-8Or" secondAttribute="bottom" constant="70" id="xXV-fP-gOd"/>
-                            <constraint firstItem="tUt-0O-ex9" firstAttribute="top" secondItem="Enk-my-WTc" secondAttribute="bottom" constant="35" id="y83-uz-xvo"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ggh-5X-jwl"/>
                     </view>
                     <navigationItem key="navigationItem" id="chQ-my-6Wq"/>
@@ -306,8 +273,9 @@ Beef gives off more than 6 lbs of carbon dioxide per serving.
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGR-5p-ovg">
-                                <rect key="frame" x="120" y="410" width="174" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGR-5p-ovg">
+                                <rect key="frame" x="120" y="385" width="174" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.88030213117599487" green="0.73341697454452515" blue="0.73327064514160156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
                                 <state key="normal" title="Suburbs">
@@ -317,19 +285,9 @@ Beef gives off more than 6 lbs of carbon dioxide per serving.
                                     <action selector="suburbButton:" destination="Tek-QD-M95" eventType="touchUpInside" id="msQ-aL-y86"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phB-Ft-gJ1">
-                                <rect key="frame" x="120" y="522" width="174" height="42"/>
-                                <color key="backgroundColor" red="0.88030213117599487" green="0.73341697454452515" blue="0.73327064514160156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
-                                <state key="normal" title="Rural">
-                                    <color key="titleColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="ruralButton:" destination="Tek-QD-M95" eventType="touchUpInside" id="TZ2-YG-wmI"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bF7-CR-lcK">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bF7-CR-lcK">
                                 <rect key="frame" x="80" y="614" width="254" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
                                 <state key="normal" title="Next Question">
                                     <color key="titleColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -338,24 +296,28 @@ Beef gives off more than 6 lbs of carbon dioxide per serving.
                                     <segue destination="GIf-0P-2kC" kind="show" id="W6S-cB-upN"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Which Best Descibes Where You Live?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Q44-Aa-00B">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Which Best Descibes Where You Live?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Q44-Aa-00B">
                                 <rect key="frame" x="80" y="35" width="254" height="259.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.95590835809999997" green="0.90603619810000002" blue="0.84029001000000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="26"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="(Choose one then press Next)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iE8-pv-Xo1">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(Choose one then press Next)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iE8-pv-Xo1">
                                 <rect key="frame" x="60" y="177" width="334" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="19"/>
                                 <color key="textColor" red="0.4224099986" green="0.26134479189999998" blue="0.082131302190000005" alpha="0.85059931509999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="plants-tumblr-png-4-300x200" translatesAutoresizingMaskIntoConstraints="NO" id="fdO-hj-bFG">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plants-tumblr-png-4-300x200" translatesAutoresizingMaskIntoConstraints="NO" id="fdO-hj-bFG">
                                 <rect key="frame" x="75" y="695" width="264" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ogy-vW-a1z">
-                                <rect key="frame" x="120" y="302" width="174" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ogy-vW-a1z">
+                                <rect key="frame" x="120" y="273" width="174" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.88030213117599487" green="0.73341697454452515" blue="0.73327064514160156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
                                 <state key="normal" title="City">
@@ -365,32 +327,20 @@ Beef gives off more than 6 lbs of carbon dioxide per serving.
                                     <action selector="cityButton:" destination="Tek-QD-M95" eventType="touchUpInside" id="NZf-aZ-YYE"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phB-Ft-gJ1">
+                                <rect key="frame" x="120" y="509" width="174" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88030213117599487" green="0.73341697454452515" blue="0.73327064514160156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
+                                <state key="normal" title="Rural">
+                                    <color key="titleColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ruralButton:" destination="Tek-QD-M95" eventType="touchUpInside" id="TZ2-YG-wmI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.95590835809707642" green="0.90603619813919067" blue="0.84029000997543335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="fdO-hj-bFG" firstAttribute="leading" secondItem="u7h-4Y-Vvb" secondAttribute="leading" constant="85" id="2cm-ii-QvJ"/>
-                            <constraint firstItem="Q44-Aa-00B" firstAttribute="leading" secondItem="u7h-4Y-Vvb" secondAttribute="leading" constant="80" id="4KY-hp-S6B"/>
-                            <constraint firstItem="u7h-4Y-Vvb" firstAttribute="trailing" secondItem="Ogy-vW-a1z" secondAttribute="trailing" constant="120" id="4Mk-w0-Xmv"/>
-                            <constraint firstItem="fdO-hj-bFG" firstAttribute="top" secondItem="bF7-CR-lcK" secondAttribute="bottom" constant="5" id="7p2-in-eU2"/>
-                            <constraint firstItem="u7h-4Y-Vvb" firstAttribute="bottom" secondItem="fdO-hj-bFG" secondAttribute="bottom" constant="20" id="9f9-vo-XzH"/>
-                            <constraint firstItem="u7h-4Y-Vvb" firstAttribute="trailing" secondItem="fdO-hj-bFG" secondAttribute="trailing" constant="85" id="AAj-Hb-Nkj"/>
-                            <constraint firstItem="Q44-Aa-00B" firstAttribute="top" secondItem="u7h-4Y-Vvb" secondAttribute="top" constant="35" id="E0y-yH-4Rd"/>
-                            <constraint firstItem="Ogy-vW-a1z" firstAttribute="leading" secondItem="u7h-4Y-Vvb" secondAttribute="leading" constant="120" id="E5E-EN-fQR"/>
-                            <constraint firstItem="bF7-CR-lcK" firstAttribute="leading" secondItem="u7h-4Y-Vvb" secondAttribute="leading" constant="70" id="Eme-7B-yCa"/>
-                            <constraint firstItem="u7h-4Y-Vvb" firstAttribute="trailing" secondItem="phB-Ft-gJ1" secondAttribute="trailing" constant="120" id="HXs-ss-843"/>
-                            <constraint firstItem="iE8-pv-Xo1" firstAttribute="top" secondItem="Q44-Aa-00B" secondAttribute="bottom" constant="15" id="R8P-Yt-OEa"/>
-                            <constraint firstItem="phB-Ft-gJ1" firstAttribute="leading" secondItem="u7h-4Y-Vvb" secondAttribute="leading" constant="120" id="VgF-Qw-58y"/>
-                            <constraint firstItem="u7h-4Y-Vvb" firstAttribute="trailing" secondItem="iE8-pv-Xo1" secondAttribute="trailing" constant="40" id="XuN-8z-elT"/>
-                            <constraint firstItem="yGR-5p-ovg" firstAttribute="leading" secondItem="u7h-4Y-Vvb" secondAttribute="leading" constant="120" id="jMc-am-i08"/>
-                            <constraint firstItem="iE8-pv-Xo1" firstAttribute="leading" secondItem="u7h-4Y-Vvb" secondAttribute="leading" constant="40" id="jPc-UA-paQ"/>
-                            <constraint firstItem="u7h-4Y-Vvb" firstAttribute="trailing" secondItem="Q44-Aa-00B" secondAttribute="trailing" constant="80" id="nKr-mx-Pfc"/>
-                            <constraint firstItem="yGR-5p-ovg" firstAttribute="top" secondItem="Ogy-vW-a1z" secondAttribute="bottom" constant="50" id="qCr-8I-jbd"/>
-                            <constraint firstItem="bF7-CR-lcK" firstAttribute="top" secondItem="phB-Ft-gJ1" secondAttribute="bottom" constant="50" id="tCn-kj-eZX"/>
-                            <constraint firstItem="Ogy-vW-a1z" firstAttribute="top" secondItem="iE8-pv-Xo1" secondAttribute="bottom" constant="66" id="ukW-JQ-F24"/>
-                            <constraint firstItem="u7h-4Y-Vvb" firstAttribute="trailing" secondItem="bF7-CR-lcK" secondAttribute="trailing" constant="70" id="vj8-6q-e5U"/>
-                            <constraint firstItem="u7h-4Y-Vvb" firstAttribute="trailing" secondItem="yGR-5p-ovg" secondAttribute="trailing" constant="120" id="ya6-5j-CrD"/>
-                            <constraint firstItem="phB-Ft-gJ1" firstAttribute="top" secondItem="yGR-5p-ovg" secondAttribute="bottom" constant="50" id="zAA-oo-BTS"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="u7h-4Y-Vvb"/>
                     </view>
                     <navigationItem key="navigationItem" id="7AR-7B-5T5"/>
@@ -411,8 +361,9 @@ Beef gives off more than 6 lbs of carbon dioxide per serving.
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gps-3d-JRm">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gps-3d-JRm">
                                 <rect key="frame" x="75" y="458" width="254" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.88030213117599487" green="0.73341697454452515" blue="0.73327064514160156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
                                 <state key="normal" title="Order Takeout">
@@ -422,8 +373,9 @@ Beef gives off more than 6 lbs of carbon dioxide per serving.
                                     <action selector="orderButton:" destination="GIf-0P-2kC" eventType="touchUpInside" id="7Ho-ol-kjZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AvU-sc-OO9">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AvU-sc-OO9">
                                 <rect key="frame" x="70" y="566" width="274" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
                                 <state key="normal" title="Next Question">
                                     <color key="titleColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -432,8 +384,9 @@ Beef gives off more than 6 lbs of carbon dioxide per serving.
                                     <segue destination="sTD-Bk-VE9" kind="show" id="SdF-Ti-ajY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0H-KM-wHL">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0H-KM-wHL">
                                 <rect key="frame" x="75" y="321" width="254" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.88030213117599487" green="0.73341697454452515" blue="0.73327064514160156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
                                 <color key="tintColor" red="0.88030213117599487" green="0.73341697454452515" blue="0.73327064514160156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -444,46 +397,28 @@ Beef gives off more than 6 lbs of carbon dioxide per serving.
                                     <action selector="shopButton:" destination="GIf-0P-2kC" eventType="touchUpInside" id="H19-YY-pXe"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="aesthetic-plant-png-18" translatesAutoresizingMaskIntoConstraints="NO" id="qPu-f7-YJN">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="aesthetic-plant-png-18" translatesAutoresizingMaskIntoConstraints="NO" id="qPu-f7-YJN">
                                 <rect key="frame" x="40" y="648" width="324" height="134"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.95590835809999997" green="0.90603619810000002" blue="0.84029001000000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Which Do You Do Most Often? " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xXk-vF-iEv">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Which Do You Do Most Often? " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xXk-vF-iEv">
                                 <rect key="frame" x="75" y="52" width="264" height="106"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.95590835809999997" green="0.90603619810000002" blue="0.84029001000000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="(Choose one then press Next)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0f-mS-y1U">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(Choose one then press Next)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0f-mS-y1U">
                                 <rect key="frame" x="40" y="212" width="334" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="19"/>
                                 <color key="textColor" red="0.4224099986" green="0.26134479189999998" blue="0.082131302190000005" alpha="0.85059931509999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.95590835809707642" green="0.90603619813919067" blue="0.84029000997543335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="qPu-f7-YJN" firstAttribute="top" secondItem="AvU-sc-OO9" secondAttribute="bottom" constant="25" id="5Be-fi-C5C"/>
-                            <constraint firstItem="Qok-4e-IgY" firstAttribute="trailing" secondItem="AvU-sc-OO9" secondAttribute="trailing" constant="70" id="77a-Zf-ial"/>
-                            <constraint firstItem="C0f-mS-y1U" firstAttribute="leading" secondItem="Qok-4e-IgY" secondAttribute="leading" constant="40" id="79n-f9-QJJ"/>
-                            <constraint firstItem="Qok-4e-IgY" firstAttribute="trailing" secondItem="Gps-3d-JRm" secondAttribute="trailing" constant="80" id="A6Q-yi-vi2"/>
-                            <constraint firstItem="Qok-4e-IgY" firstAttribute="trailing" secondItem="qPu-f7-YJN" secondAttribute="trailing" constant="50" id="D3k-kM-B7R"/>
-                            <constraint firstItem="Qok-4e-IgY" firstAttribute="trailing" secondItem="xXk-vF-iEv" secondAttribute="trailing" constant="75" id="Dkl-O3-vu9"/>
-                            <constraint firstItem="Qok-4e-IgY" firstAttribute="bottom" secondItem="qPu-f7-YJN" secondAttribute="bottom" constant="22" id="DtN-CN-AWM"/>
-                            <constraint firstItem="Qok-4e-IgY" firstAttribute="trailing" secondItem="C0f-mS-y1U" secondAttribute="trailing" constant="40" id="GtI-1X-bL9"/>
-                            <constraint firstItem="xXk-vF-iEv" firstAttribute="top" secondItem="Qok-4e-IgY" secondAttribute="top" constant="60" id="K3h-ZP-Vgg"/>
-                            <constraint firstItem="AvU-sc-OO9" firstAttribute="leading" secondItem="Qok-4e-IgY" secondAttribute="leading" constant="70" id="LMM-6H-cu9"/>
-                            <constraint firstItem="Gps-3d-JRm" firstAttribute="leading" secondItem="Qok-4e-IgY" secondAttribute="leading" constant="80" id="RuS-VC-HYA"/>
-                            <constraint firstItem="qPu-f7-YJN" firstAttribute="leading" secondItem="Qok-4e-IgY" secondAttribute="leading" constant="50" id="d4K-I2-gdw"/>
-                            <constraint firstItem="Qok-4e-IgY" firstAttribute="trailing" secondItem="K0H-KM-wHL" secondAttribute="trailing" constant="80" id="dhO-4e-71J"/>
-                            <constraint firstItem="K0H-KM-wHL" firstAttribute="top" secondItem="C0f-mS-y1U" secondAttribute="bottom" constant="110" id="eR6-ks-7S8"/>
-                            <constraint firstItem="K0H-KM-wHL" firstAttribute="leading" secondItem="Qok-4e-IgY" secondAttribute="leading" constant="80" id="gvn-Ut-tHL"/>
-                            <constraint firstItem="xXk-vF-iEv" firstAttribute="leading" secondItem="Qok-4e-IgY" secondAttribute="leading" constant="75" id="hTj-cd-LKl"/>
-                            <constraint firstItem="AvU-sc-OO9" firstAttribute="top" secondItem="Gps-3d-JRm" secondAttribute="bottom" constant="50" id="hoC-sY-KEa"/>
-                            <constraint firstItem="Gps-3d-JRm" firstAttribute="top" secondItem="K0H-KM-wHL" secondAttribute="bottom" constant="105" id="rQU-sm-FlR"/>
-                            <constraint firstItem="C0f-mS-y1U" firstAttribute="top" secondItem="xXk-vF-iEv" secondAttribute="bottom" constant="80" id="x3D-Pe-ua0"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Qok-4e-IgY"/>
                     </view>
                     <navigationItem key="navigationItem" id="ZJS-dV-4cw"/>
@@ -504,8 +439,9 @@ Beef gives off more than 6 lbs of carbon dioxide per serving.
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l3V-CP-tq4">
-                                <rect key="frame" x="140" y="440.5" width="134" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l3V-CP-tq4">
+                                <rect key="frame" x="140" y="400" width="134" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.88030213117599487" green="0.73341697454452515" blue="0.73327064514160156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
                                 <color key="tintColor" red="0.88030213117599487" green="0.73341697454452515" blue="0.73327064514160156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -516,19 +452,9 @@ Beef gives off more than 6 lbs of carbon dioxide per serving.
                                     <action selector="busButton:" destination="sTD-Bk-VE9" eventType="touchUpInside" id="SYl-Uh-5wK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sia-2J-VKm">
-                                <rect key="frame" x="140" y="512.5" width="134" height="42"/>
-                                <color key="backgroundColor" red="0.88030213117599487" green="0.73341697454452515" blue="0.73327064514160156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
-                                <state key="normal" title="Train">
-                                    <color key="titleColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="trainButton:" destination="sTD-Bk-VE9" eventType="touchUpInside" id="Ydy-hd-txm"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cd1-ec-6uQ">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cd1-ec-6uQ">
                                 <rect key="frame" x="140" y="584.5" width="134" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.88030213117599487" green="0.73341697454452515" blue="0.73327064514160156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
                                 <state key="normal" title="Bike">
@@ -538,8 +464,9 @@ Beef gives off more than 6 lbs of carbon dioxide per serving.
                                     <action selector="bikeButton:" destination="sTD-Bk-VE9" eventType="touchUpInside" id="oji-jK-3tz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cO5-KX-o76">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cO5-KX-o76">
                                 <rect key="frame" x="100" y="656.5" width="214" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
                                 <state key="normal" title="Next Question">
                                     <color key="titleColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -548,8 +475,9 @@ Beef gives off more than 6 lbs of carbon dioxide per serving.
                                     <segue destination="Gdv-nG-aIU" kind="show" id="UDL-Ea-gmR"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngw-Nj-yDd">
-                                <rect key="frame" x="140" y="368.5" width="134" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngw-Nj-yDd">
+                                <rect key="frame" x="140" y="307" width="134" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.88030213117599487" green="0.73341697454452515" blue="0.73327064514160156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
                                 <state key="normal" title="Car">
@@ -559,52 +487,40 @@ Beef gives off more than 6 lbs of carbon dioxide per serving.
                                     <action selector="carButton:" destination="sTD-Bk-VE9" eventType="touchUpInside" id="yL6-ii-Ubv"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="What Transportation Do You Use Most Often?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TbK-GY-vyL">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="What Transportation Do You Use Most Often?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TbK-GY-vyL">
                                 <rect key="frame" x="75" y="25" width="264" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.95590835809999997" green="0.90603619810000002" blue="0.84029001000000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="26"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cactus-png-tumblr-6" translatesAutoresizingMaskIntoConstraints="NO" id="G95-hE-eSa">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cactus-png-tumblr-6" translatesAutoresizingMaskIntoConstraints="NO" id="G95-hE-eSa">
                                 <rect key="frame" x="55" y="703.5" width="304" height="106.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.95590835809999997" green="0.90603619810000002" blue="0.84029001000000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Choose one then press Next)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="174-mQ-1nP">
-                                <rect key="frame" x="43" y="285.5" width="328" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(Choose one then press Next)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="174-mQ-1nP">
+                                <rect key="frame" x="43" y="220" width="328" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="19"/>
                                 <color key="textColor" red="0.4224099986" green="0.26134479189999998" blue="0.082131302190000005" alpha="0.85059931509999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sia-2J-VKm">
+                                <rect key="frame" x="140" y="492" width="134" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88030213117599487" green="0.73341697454452515" blue="0.73327064514160156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
+                                <state key="normal" title="Train">
+                                    <color key="titleColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="trainButton:" destination="sTD-Bk-VE9" eventType="touchUpInside" id="Ydy-hd-txm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.95590835809707642" green="0.90603619813919067" blue="0.84029000997543335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="sia-2J-VKm" firstAttribute="leading" secondItem="vv7-CT-7Xb" secondAttribute="leading" constant="140" id="2Kl-US-bP8"/>
-                            <constraint firstItem="vv7-CT-7Xb" firstAttribute="trailing" secondItem="G95-hE-eSa" secondAttribute="trailing" constant="55" id="2Ou-92-fh6"/>
-                            <constraint firstItem="vv7-CT-7Xb" firstAttribute="trailing" secondItem="cd1-ec-6uQ" secondAttribute="trailing" constant="140" id="4RM-gy-clB"/>
-                            <constraint firstItem="ngw-Nj-yDd" firstAttribute="top" secondItem="174-mQ-1nP" secondAttribute="bottom" constant="60" id="6br-GM-gPi"/>
-                            <constraint firstItem="ngw-Nj-yDd" firstAttribute="leading" secondItem="vv7-CT-7Xb" secondAttribute="leading" constant="140" id="6uq-3q-wJY"/>
-                            <constraint firstItem="l3V-CP-tq4" firstAttribute="leading" secondItem="vv7-CT-7Xb" secondAttribute="leading" constant="140" id="B3h-Ll-v7A"/>
-                            <constraint firstItem="vv7-CT-7Xb" firstAttribute="trailing" secondItem="TbK-GY-vyL" secondAttribute="trailing" constant="75" id="JLE-iz-y3v"/>
-                            <constraint firstItem="G95-hE-eSa" firstAttribute="bottom" secondItem="vv7-CT-7Xb" secondAttribute="bottom" constant="2" id="NLl-r4-0ML"/>
-                            <constraint firstItem="vv7-CT-7Xb" firstAttribute="trailing" secondItem="l3V-CP-tq4" secondAttribute="trailing" constant="140" id="NwS-cO-Gut"/>
-                            <constraint firstItem="cO5-KX-o76" firstAttribute="top" secondItem="cd1-ec-6uQ" secondAttribute="bottom" constant="30" id="PcQ-nz-fTt"/>
-                            <constraint firstItem="cd1-ec-6uQ" firstAttribute="top" secondItem="sia-2J-VKm" secondAttribute="bottom" constant="30" id="Qh8-MX-CkR"/>
-                            <constraint firstItem="174-mQ-1nP" firstAttribute="leading" secondItem="vv7-CT-7Xb" secondAttribute="leading" constant="43" id="TEl-Qc-fsV"/>
-                            <constraint firstItem="l3V-CP-tq4" firstAttribute="top" secondItem="ngw-Nj-yDd" secondAttribute="bottom" constant="30" id="YUP-7S-xBG"/>
-                            <constraint firstItem="sia-2J-VKm" firstAttribute="top" secondItem="l3V-CP-tq4" secondAttribute="bottom" constant="30" id="blq-cs-3Vl"/>
-                            <constraint firstItem="TbK-GY-vyL" firstAttribute="top" secondItem="vv7-CT-7Xb" secondAttribute="top" constant="40" id="c9w-Lb-bCc"/>
-                            <constraint firstItem="G95-hE-eSa" firstAttribute="top" secondItem="cO5-KX-o76" secondAttribute="bottom" constant="5" id="dB5-TI-Psy"/>
-                            <constraint firstItem="vv7-CT-7Xb" firstAttribute="trailing" secondItem="sia-2J-VKm" secondAttribute="trailing" constant="140" id="iLH-QS-wBY"/>
-                            <constraint firstItem="TbK-GY-vyL" firstAttribute="leading" secondItem="vv7-CT-7Xb" secondAttribute="leading" constant="75" id="tDa-zA-70w"/>
-                            <constraint firstItem="G95-hE-eSa" firstAttribute="leading" secondItem="vv7-CT-7Xb" secondAttribute="leading" constant="55" id="tIh-9d-aWD"/>
-                            <constraint firstItem="vv7-CT-7Xb" firstAttribute="trailing" secondItem="cO5-KX-o76" secondAttribute="trailing" constant="100" id="xPP-Jx-w4W"/>
-                            <constraint firstItem="174-mQ-1nP" firstAttribute="top" secondItem="TbK-GY-vyL" secondAttribute="bottom" constant="130" id="y7o-o4-7tM"/>
-                            <constraint firstItem="vv7-CT-7Xb" firstAttribute="trailing" secondItem="ngw-Nj-yDd" secondAttribute="trailing" constant="140" id="yo5-EG-Ejd"/>
-                            <constraint firstItem="cd1-ec-6uQ" firstAttribute="leading" secondItem="vv7-CT-7Xb" secondAttribute="leading" constant="140" id="zOz-GT-wV7"/>
-                            <constraint firstItem="vv7-CT-7Xb" firstAttribute="trailing" secondItem="174-mQ-1nP" secondAttribute="trailing" constant="43" id="zfP-HQ-EYS"/>
-                            <constraint firstItem="cO5-KX-o76" firstAttribute="leading" secondItem="vv7-CT-7Xb" secondAttribute="leading" constant="100" id="zlm-n5-26b"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="vv7-CT-7Xb"/>
                     </view>
                     <navigationItem key="navigationItem" id="Hgx-O8-D9g"/>
@@ -625,8 +541,9 @@ Beef gives off more than 6 lbs of carbon dioxide per serving.
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiu-Wf-TjI">
-                                <rect key="frame" x="100" y="427.5" width="214" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiu-Wf-TjI">
+                                <rect key="frame" x="100" y="344" width="214" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.88030213117599487" green="0.73341697454452515" blue="0.73327064514160156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
                                 <state key="normal" title="Yes">
@@ -636,8 +553,9 @@ Beef gives off more than 6 lbs of carbon dioxide per serving.
                                     <action selector="yesButton:" destination="Gdv-nG-aIU" eventType="touchUpInside" id="eul-mL-QJp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZz-92-GuV">
-                                <rect key="frame" x="100" y="519.5" width="214" height="43"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZz-92-GuV">
+                                <rect key="frame" x="100" y="452" width="214" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.88030213117599487" green="0.73341697454452515" blue="0.73327064514160156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="26"/>
                                 <state key="normal" title="No">
@@ -647,8 +565,9 @@ Beef gives off more than 6 lbs of carbon dioxide per serving.
                                     <action selector="noButton:" destination="Gdv-nG-aIU" eventType="touchUpInside" id="x8f-0Y-y6K"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZn-AE-i2h">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZn-AE-i2h">
                                 <rect key="frame" x="100" y="689.5" width="214" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
                                 <state key="normal" title="View EcoTips">
                                     <color key="titleColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -657,8 +576,28 @@ Beef gives off more than 6 lbs of carbon dioxide per serving.
                                     <segue destination="jZ5-hW-Ow2" kind="show" id="4W9-V8-3hd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mA7-p1-g6A">
-                                <rect key="frame" x="100" y="612.5" width="214" height="42"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Are Most Of Your Daily Products Recyclable? " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LZJ-pI-ptp">
+                                <rect key="frame" x="82" y="55" width="250" height="183"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95590835809999997" green="0.90603619810000002" blue="0.84029001000000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="27"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plants-tumblr-png-4-300x200" translatesAutoresizingMaskIntoConstraints="NO" id="qzu-Pq-tec">
+                                <rect key="frame" x="80" y="736.5" width="254" height="66.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(Choose one then press View)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIG-FG-ads">
+                                <rect key="frame" x="40" y="254" width="334" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="19"/>
+                                <color key="textColor" red="0.4224099986" green="0.26134479189999998" blue="0.082131302190000005" alpha="0.85059931509999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mA7-p1-g6A">
+                                <rect key="frame" x="100" y="567" width="214" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.88030213117599487" green="0.73341697454452515" blue="0.73327064514160156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
                                 <state key="normal" title="I don't know">
@@ -668,48 +607,8 @@ Beef gives off more than 6 lbs of carbon dioxide per serving.
                                     <action selector="dontKnowButton:" destination="Gdv-nG-aIU" eventType="touchUpInside" id="5jG-IA-JOa"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Are Most Of Your Daily Products Recyclable? " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LZJ-pI-ptp">
-                                <rect key="frame" x="82" y="55" width="250" height="183"/>
-                                <color key="backgroundColor" red="0.95590835809999997" green="0.90603619810000002" blue="0.84029001000000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="textColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="27"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plants-tumblr-png-4-300x200" translatesAutoresizingMaskIntoConstraints="NO" id="qzu-Pq-tec">
-                                <rect key="frame" x="80" y="736.5" width="254" height="66.5"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="(Choose one then press View)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIG-FG-ads">
-                                <rect key="frame" x="40" y="277" width="334" height="23"/>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="19"/>
-                                <color key="textColor" red="0.4224099986" green="0.26134479189999998" blue="0.082131302190000005" alpha="0.85059931509999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.95590835809707642" green="0.90603619813919067" blue="0.84029000997543335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="S4g-hi-PD6" firstAttribute="trailing" secondItem="HZn-AE-i2h" secondAttribute="trailing" constant="100" id="06B-3z-CNA"/>
-                            <constraint firstItem="S4g-hi-PD6" firstAttribute="trailing" secondItem="aiu-Wf-TjI" secondAttribute="trailing" constant="100" id="14L-Nc-ayK"/>
-                            <constraint firstItem="qzu-Pq-tec" firstAttribute="top" secondItem="HZn-AE-i2h" secondAttribute="bottom" constant="5" id="2pZ-47-Aop"/>
-                            <constraint firstItem="xIG-FG-ads" firstAttribute="top" secondItem="LZJ-pI-ptp" secondAttribute="bottom" constant="50" id="7vM-fy-WuH"/>
-                            <constraint firstItem="aiu-Wf-TjI" firstAttribute="top" secondItem="xIG-FG-ads" secondAttribute="bottom" constant="45" id="7yI-r6-y6y"/>
-                            <constraint firstItem="S4g-hi-PD6" firstAttribute="trailing" secondItem="LZJ-pI-ptp" secondAttribute="trailing" constant="82" id="AnR-TK-A8W"/>
-                            <constraint firstItem="S4g-hi-PD6" firstAttribute="trailing" secondItem="qzu-Pq-tec" secondAttribute="trailing" constant="80" id="CPo-sz-NO5"/>
-                            <constraint firstItem="JZz-92-GuV" firstAttribute="top" secondItem="aiu-Wf-TjI" secondAttribute="bottom" constant="50" id="Ec5-ON-LKQ"/>
-                            <constraint firstItem="JZz-92-GuV" firstAttribute="leading" secondItem="S4g-hi-PD6" secondAttribute="leading" constant="100" id="H3K-CL-1OX"/>
-                            <constraint firstItem="LZJ-pI-ptp" firstAttribute="top" secondItem="S4g-hi-PD6" secondAttribute="top" constant="55" id="HF3-Gg-bfP"/>
-                            <constraint firstItem="S4g-hi-PD6" firstAttribute="trailing" secondItem="mA7-p1-g6A" secondAttribute="trailing" constant="100" id="ICg-fS-ZhP"/>
-                            <constraint firstItem="aiu-Wf-TjI" firstAttribute="leading" secondItem="S4g-hi-PD6" secondAttribute="leading" constant="100" id="IMC-Tr-1OE"/>
-                            <constraint firstItem="xIG-FG-ads" firstAttribute="leading" secondItem="S4g-hi-PD6" secondAttribute="leading" constant="40" id="J6W-2J-LJ4"/>
-                            <constraint firstItem="mA7-p1-g6A" firstAttribute="top" secondItem="JZz-92-GuV" secondAttribute="bottom" constant="50" id="JPL-um-hR3"/>
-                            <constraint firstItem="S4g-hi-PD6" firstAttribute="trailing" secondItem="JZz-92-GuV" secondAttribute="trailing" constant="100" id="Pdh-mF-I9N"/>
-                            <constraint firstItem="HZn-AE-i2h" firstAttribute="top" secondItem="mA7-p1-g6A" secondAttribute="bottom" constant="35" id="QSC-Gg-yHc"/>
-                            <constraint firstItem="S4g-hi-PD6" firstAttribute="bottom" secondItem="qzu-Pq-tec" secondAttribute="bottom" constant="5" id="YG7-cN-Cu1"/>
-                            <constraint firstItem="qzu-Pq-tec" firstAttribute="leading" secondItem="S4g-hi-PD6" secondAttribute="leading" constant="80" id="cBb-4m-L9E"/>
-                            <constraint firstItem="LZJ-pI-ptp" firstAttribute="leading" secondItem="S4g-hi-PD6" secondAttribute="leading" constant="82" id="lDP-Ex-Qp4"/>
-                            <constraint firstItem="HZn-AE-i2h" firstAttribute="leading" secondItem="S4g-hi-PD6" secondAttribute="leading" constant="100" id="qgn-F2-9bK"/>
-                            <constraint firstItem="S4g-hi-PD6" firstAttribute="trailing" secondItem="xIG-FG-ads" secondAttribute="trailing" constant="40" id="xtG-da-YeR"/>
-                            <constraint firstItem="mA7-p1-g6A" firstAttribute="leading" secondItem="S4g-hi-PD6" secondAttribute="leading" constant="100" id="yes-1B-2cc"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="S4g-hi-PD6"/>
                     </view>
                     <navigationItem key="navigationItem" id="sFs-Pb-hBr"/>
@@ -731,7 +630,7 @@ Beef gives off more than 6 lbs of carbon dioxide per serving.
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="St2-mq-rOL">
-                                <rect key="frame" x="35" y="251" width="345" height="574"/>
+                                <rect key="frame" x="35" y="215" width="345" height="441"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.95590835809999997" green="0.90603619810000002" blue="0.84029001000000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -749,6 +648,21 @@ Beef gives off more than 6 lbs of carbon dioxide per serving.
                                 <color key="textColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmk-gI-P83">
+                                <rect key="frame" x="77" y="738" width="260" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88030213117599487" green="0.73341697454452515" blue="0.73327064514160156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="27"/>
+                                <state key="normal" title="Back to Home">
+                                    <color key="titleColor" red="0.28766819834709167" green="0.39631545543670654" blue="0.13653275370597839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="homeButton:" destination="jZ5-hW-Ow2" eventType="touchUpInside" id="fIX-Sw-9Ji"/>
+                                    <segue destination="BYZ-38-t0r" kind="popoverPresentation" popoverAnchorView="hmk-gI-P83" id="2Yh-dc-ROX">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.95590835809707642" green="0.90603619813919067" blue="0.84029000997543335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="wgW-ff-ekI"/>
@@ -764,6 +678,9 @@ Beef gives off more than 6 lbs of carbon dioxide per serving.
             <point key="canvasLocation" x="4624.6376811594209" y="123.88392857142857"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="2Yh-dc-ROX"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Image from iOS" width="143.5" height="143.5"/>
         <image name="aesthetic-plant-png-18" width="128.5" height="153"/>

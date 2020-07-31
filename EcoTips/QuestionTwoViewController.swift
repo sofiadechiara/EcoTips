@@ -24,11 +24,16 @@ class QuestionTwoViewController: UIViewController {
     }
     
     @IBAction func cityButton(_ sender: UIButton) {
-        choicesArray.append("Take public transportation, walk, or bike")
+        let random = Int.random(in : 1...2)
+        if random == 1 {
+            choicesArray.append("Take public transportation, walk, or bike")
+        } else {
+            choicesArray.append("Reduce pollution in urban areas by using solar energy, reusable cups, and public transportation.")
+        }
     }
     
     @IBAction func suburbButton(_ sender: UIButton) {
-        choicesArray.append("Carpool, bike, or walk")
+        choicesArray.append("Try to carpool, bike, or walk")
     }
     
     @IBAction func ruralButton(_ sender: UIButton) {
